@@ -1,0 +1,4 @@
+git add -A
+git commit -m "What you did"
+git pull logicals master
+git push logicals master
