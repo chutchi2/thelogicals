@@ -1,0 +1,149 @@
+(ExpressProject "PFE"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\abm.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\analog.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\analog_p.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\breakout.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\eval.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\evalaa.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\evalp.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\source.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\sourcstm.olb"
+        (Type "Schematic Library"))
+      (File
+         "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice\demo\special.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "pfe.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\pfe-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pfe-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pfe-pspicefiles\schematic1\simulation.sim"
+        (DisplayName "SCHEMATIC1-simulation")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pfe-pspicefiles\schematic1\simulation 2.sim"
+        (DisplayName "SCHEMATIC1-simulation 2")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\pfe-pspicefiles\schematic1\simulationac.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pfe-pspicefiles\schematic1\simulationac.sim"
+        (DisplayName "SCHEMATIC1-simulationAC")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (GND_SIGNAL
+      (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSFFM
+      (FullPartName "VSFFM.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (kbreak
+      (FullPartName "kbreak.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (BFG194
+      (FullPartName "BFG194.Normal")
+      (LibraryName "..\..\library\pspice\DEMO\EVALAA.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "..\..\library\pspice\demo")
+  (MPSSessionName "Tiffany")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\pfe.dsn")
+      (Path "Design Resources"
+         "C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\pfe.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 213"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1238 52 304")
+        (Scroll "-144 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\TIFFANY\DOCUMENTS\ENGINEERING\ECE4899 - SENIOR DESIGN\PFE.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
