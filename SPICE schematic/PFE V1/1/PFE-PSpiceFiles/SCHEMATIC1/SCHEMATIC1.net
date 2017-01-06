@@ -23,7 +23,9 @@ Kn_K1         L_L11 L_L12     1 Kbreak
 L_L21         N01605 N00861  10nH  
 L_L22         0 N00868  10nH  
 Kn_K2         L_L21 L_L22     1 Kbreak
-V_V1         N02047 0 DC 3Vdc AC 1Vac 
-V_V2         N03264 0 DC 3Vdc AC 1Vac 
 C_C857         N02047 N01389  100p  TC=0,0 
 C_C858         N03264 N01901  100pF  TC=0,0 
+V_V3         N02047 0  
++SFFM 0 3 1.6G 10n 800M
+V_V4         N03264 0  
++SFFM 0 3 1.6G 10n 800M

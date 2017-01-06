@@ -23,8 +23,8 @@ Kn_K1            K1() CN @PFE.SCHEMATIC1(sch_1):INS1324@BREAKOUT.kbreak.Normal(c
 L_L21           L21(1=N01605 2=N00861 ) CN @PFE.SCHEMATIC1(sch_1):INS1563@ANALOG.L.Normal(chips)
 L_L22           L22(1=0 2=N00868 ) CN @PFE.SCHEMATIC1(sch_1):INS1547@ANALOG.L.Normal(chips)
 Kn_K2            K2() CN @PFE.SCHEMATIC1(sch_1):INS1579@BREAKOUT.kbreak.Normal(chips)
-V_V1            V1(+=N02047 -=0 ) CN @PFE.SCHEMATIC1(sch_1):INS2575@SOURCE.VAC.Normal(chips)
-V_V2            V2(+=N03264 -=0 ) CN @PFE.SCHEMATIC1(sch_1):INS2613@SOURCE.VAC.Normal(chips)
 C_C857          C857(1=N02047 2=N01389 ) CN @PFE.SCHEMATIC1(sch_1):INS3202@ANALOG.C.Normal(chips)
 C_C858          C858(1=N03264 2=N01901 ) CN @PFE.SCHEMATIC1(sch_1):INS3236@ANALOG.C.Normal(chips)
+V_V3            V3(+=N02047 -=0 ) CN @PFE.SCHEMATIC1(sch_1):INS5137@SOURCE.VSFFM.Normal(chips)
+V_V4            V4(+=N03264 -=0 ) CN @PFE.SCHEMATIC1(sch_1):INS5556@SOURCE.VSFFM.Normal(chips)
 .ENDALIASES

@@ -13,12 +13,22 @@
     (File ".\pfe-pspicefiles\schematic1\schematic1.net"
       (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles")
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\pfe-pspicefiles\schematic1\test1.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pfe-pspicefiles\schematic1\test1.sim"
+        (DisplayName "SCHEMATIC1-test1")
+        (Type "PSpice Profile")))
     (Folder "Model Libraries")
     (Folder "Stimulus Files")
     (Folder "Include Files"))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (VSFFM
+      (FullPartName "VSFFM.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (GND_SIGNAL
       (LibraryName "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -35,11 +45,6 @@
       (DeviceIndex "0"))
     (VAC
       (FullPartName "VAC.Normal")
-      (LibraryName
-         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (VSFFM
-      (FullPartName "VSFFM.Normal")
       (LibraryName
          "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
@@ -72,11 +77,29 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1\1\pfe.dsn")
+      (Path "Design Resources"
+         "C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1\1\pfe.dsn"
+         "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"))
+      (Select "Design Resources"
+         "C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1\1\pfe.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 213"))
-      (Tab 0))))
+        (Placement "44 0 1 160 324 -8 -31 643 1286 117 267"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 643 0 352")
+        (Scroll "-144 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\TIFFANY\DOCUMENTS\ENGINEERING\ECE4899 - SENIOR DESIGN\GIT_LOGICALS\SPICE SCHEMATIC\PFE V1\1\PFE.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
