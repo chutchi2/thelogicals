@@ -30,20 +30,30 @@ char(recv(siggen_s2,100))
 	select * where{ \
 		<#current> :serial ?s . \
 	}"});
-[a b c d]=regexp(reply,'\d+');
+[a b c d]=regexp(reply,'\d+'); % input numbers
 cal.sn=sscanf(d{1},'%i');    %first match
 cal.t=time;
 cal.cal_loc=1; %COS
 cal.LO_f=LO_f;
 cal.amplifier_gain_db=amplifier_gain_db;
 %create work directory
-mkdir(sprintf('cw_cal_%i',cal.sn));
+mkdir(sprintf('cw_cal_%i',cal.sn)); % attach calibration to serial number
 
 %set up the spectrum
 %duration=0.003;
 duration=0.005;
 %rbw=60e6/256;
 rbw=60e6/4096;
+
+% bw
+% cf - calibration frequency
+% duration
+% attenuation
+% rbw
+% vbw
+% window
+% prints to system the instrument serial number, durationm rbw, frequency
+
 [reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 	prefix :<http://www.sat.com/2011/measure#>\
 	insert data{\
@@ -55,8 +65,9 @@ gain_ch_1=[];
 traces_ch2=[];
 gain_ch_2=[];
 
-
+% DC OFFSET
 offset=1.0e6;
+
 %for p=ports
 
 	%%printf("Pausing... Install inject cable on port #%d\n",p);
@@ -78,6 +89,9 @@ offset=1.0e6;
 			insert data{\
 				<#s> :gain %i;:attenuation 0;:dc_tracking 1;:dc_offset 0 .\
 			}",g)});
+
+        % adjusting gain g in a loop
+        % #%s compared to #s?????
 
 		_gain_ch_1=[];
 		_gain_ch_2=[];
@@ -113,12 +127,15 @@ offset=1.0e6;
 					<#%s> :port <#RX1> .\
 				}",instrument)});
 
+            % SPARQl selects R1 port
 
 			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 				prefix :<http://www.sat.com/2011/measure#>\
 				insert data{\
 					<#%s> :cf \"%f\";:command :acquire,:get_spectrum .\
 				}",instrument,f+offset)});
+
+            % f is set in
 				
 			%load spectrum
 			spectrum=sprintf('cw_cal_%i/dump.mat',cal.sn);
@@ -137,13 +154,17 @@ offset=1.0e6;
 					<#%s> :port <#RX2> .\
 				}",instrument)});
 
+            % select channel 2
 
 			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 				prefix :<http://www.sat.com/2011/measure#>\
 				insert data{\
 					<#%s> :cf \"%f\";:command :acquire,:get_spectrum .\
 				}",instrument,f+offset)});
-				
+
+            % adjust the offset
+
+
 			%load spectrum
 			spectrum=sprintf('cw_cal_%i/dump.mat',cal.sn);
 			urlwrite(sprintf('%s/r/_11a',sataddr),spectrum);%URI should not be hard-coded
@@ -159,6 +180,8 @@ offset=1.0e6;
 			
 		end
 		% Not a fan of the underscored variables... /jw
+        % UPDATE TO COME
+
 		gain_ch_1=[gain_ch_1 (_gain_ch_1)];
 		gain_ch_2=[gain_ch_2 (_gain_ch_2)];
 	end
@@ -188,6 +211,6 @@ end
 cal.gain_db=[10*log10(gain_ch_1) 10*log10(gain_ch_2)];
 
 % do this manually... pull out power to get insertion loss... 
-
+% We will unplug it then...
 
 	
