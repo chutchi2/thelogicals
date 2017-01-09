@@ -6676,38 +6676,38 @@ In this library the device names are the same as the pin names of the symbols, t
 </module>
 </modules>
 <parts>
-<part name="C1" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C2" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C3" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C4" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C5" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C6" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C7" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C8" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C9" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C10" library="resistor" deviceset="C-US" device="C0402"/>
+<part name="C1" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C2" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C3" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C4" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C5" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C6" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C7" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C8" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C9" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C10" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C0402"/>
 <part name="C12" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C13" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C14" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C15" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C16" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="L1" library="resistor" deviceset="L-US" device="0204V"/>
-<part name="L2" library="resistor" deviceset="L-US" device="0204V"/>
-<part name="L3" library="resistor" deviceset="L-US" device="0204V"/>
-<part name="L4" library="resistor" deviceset="L-US" device="0204V"/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R6" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R8" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R10" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="C13" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C14" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C15" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="C16" library="resistor" deviceset="C-US" device="C0402" value="100 pF"/>
+<part name="L1" library="resistor" deviceset="L-US" device="0204V" value="1.0 nH"/>
+<part name="L2" library="resistor" deviceset="L-US" device="0204V" value="1.0 nH"/>
+<part name="L3" library="resistor" deviceset="L-US" device="0204V" value="1.0 nH"/>
+<part name="L4" library="resistor" deviceset="L-US" device="0204V" value="1.0 nH"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="R0402" value="93.1 Ohm"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="R0402" value="93.1 Ohm"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R0402" value="221 Ohm"/>
+<part name="R4" library="resistor" deviceset="R-US_" device="R0402" value="221 Ohm"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="23.7 Ohm"/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0402" value="23.7 Ohm"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0402" value="221 Ohm"/>
+<part name="R8" library="resistor" deviceset="R-US_" device="R0402" value="221 Ohm"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="R0402" value="100 Ohm"/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0402" value="100 Ohm"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0402" value="100 Ohm"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="R0402" value="100 Ohm"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
@@ -6743,9 +6743,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="L1" gate="G$1" x="144.78" y="114.3" rot="R90"/>
 <instance part="L2" gate="G$1" x="144.78" y="93.98" rot="R90"/>
 <instance part="L3" gate="G$1" x="154.94" y="30.48" rot="R90"/>
-<instance part="L4" gate="G$1" x="157.48" y="12.7" rot="R90"/>
+<instance part="L4" gate="G$1" x="154.94" y="12.7" rot="R90"/>
 <instance part="R1" gate="G$1" x="157.48" y="104.14" rot="R270"/>
-<instance part="R2" gate="G$1" x="167.64" y="22.86" rot="R270"/>
+<instance part="R2" gate="G$1" x="167.64" y="20.32" rot="R270"/>
 <instance part="R3" gate="G$1" x="81.28" y="104.14" rot="R270"/>
 <instance part="R4" gate="G$1" x="99.06" y="104.14" rot="R270"/>
 <instance part="R5" gate="G$1" x="91.44" y="114.3"/>
@@ -6954,7 +6954,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="17.78" x2="144.78" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="L4" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="12.7" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="12.7" x2="147.32" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="12.7" x2="137.16" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="12.7" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="17.78" x2="134.62" y2="17.78" width="0.1524" layer="91"/>
@@ -6965,7 +6965,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="L3" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="30.48" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="30.48" x2="167.64" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="30.48" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="30.48" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="30.48" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="22.86" x2="180.34" y2="22.86" width="0.1524" layer="91"/>
@@ -6975,8 +6975,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="L4" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="12.7" x2="167.64" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="12.7" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="12.7" x2="167.64" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="12.7" x2="167.64" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="12.7" x2="172.72" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="12.7" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="2"/>
