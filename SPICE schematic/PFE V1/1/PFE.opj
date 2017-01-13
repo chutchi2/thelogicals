@@ -14,16 +14,25 @@
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
-      (ActiveProfile ".\pfe-pspicefiles\schematic1\test1.sim")
+      (ActiveProfile ".\pfe-pspicefiles\schematic1\test.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\pfe-pspicefiles\schematic1\test1.sim"
         (DisplayName "SCHEMATIC1-test1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pfe-pspicefiles\schematic1\test.sim"
+        (DisplayName "SCHEMATIC1-test")
         (Type "PSpice Profile")))
     (Folder "Model Libraries")
     (Folder "Stimulus Files")
     (Folder "Include Files"))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (VSFFM
       (FullPartName "VSFFM.Normal")
       (LibraryName

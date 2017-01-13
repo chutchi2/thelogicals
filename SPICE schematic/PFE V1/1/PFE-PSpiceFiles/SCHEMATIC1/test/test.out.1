@@ -1,3 +1,35 @@
+
+**** 01/12/17 20:55:54 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Tiffany\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
 * source PFE
 L_L26         N00849 N00228  1nH  
 L_L27         N00856 N00235  1nH  
@@ -30,17 +62,41 @@ V_V5         N10917 0  AC 1
 V_V6         N10953 0  AC 1
 +SIN 0 3 1.6GHz 0 0 0
 R_R474         N10937 N10929  100 Ohm TC=0,0 
+----------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 C_C861         N10957 N10997  100 pF  TC=0,0 
+----------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 C_C862         N10953 N10993  100 pF  TC=0,0 
+----------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 R_R473         N10933 N10925  100 Ohm TC=0,0 
+----------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 C_C860         N10921 N10989  100 pF  TC=0,0 
+----------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 R_R472         N10969 N10965  100 Ohm TC=0,0 
+----------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 R_R471         N10973 N10961  100 Ohm TC=0,0 
+----------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 C_C750         0 N10937  100 pF  TC=0,0 
+-----------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 C_C753         0 N10973  100 pF  TC=0,0 
+-----------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 C_C859         N10917 N03268  100 pF  TC=0,0 
+----------------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 C_C752         0 N10969  100 pF  TC=0,0 
+-----------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 C_C751         0 N10933  100 pF  TC=0,0 
+-----------------------------$
+ERROR(ORPSIM-16015): Unknown parameter.
 R_RU54RF1         N12316 N11632  50 TC=0,0 
 R_RU54RF2         N10989 N11661  50 TC=0,0 
 R_RU56RF1         N12320 N11697  50 TC=0,0 
@@ -53,3 +109,7 @@ V_V7         N10925 0 0Vdc
 V_V8         N10929 0 5Vdc
 V_V9         N10961 0 0Vdc
 V_V10         N10965 0 5Vdc
+
+**** RESUMING test.cir ****
+.END
+
