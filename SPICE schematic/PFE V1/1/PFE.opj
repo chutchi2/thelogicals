@@ -82,18 +82,18 @@
       (LibraryName "..\..\library\pspice\DEMO\EVALAA.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory "..\..\library\pspice\demo")
-  (MPSSessionName "Tiffany")
+  (MPSSessionName "Cody")
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1\1\pfe.dsn")
+         "C:\Users\Cody\Desktop\Classes\ECE 4899\git_thelogicals\SPICE schematic\PFE V1\1\pfe.dsn")
       (Path "Design Resources"
-         "C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1\1\pfe.dsn"
+         "C:\Users\Cody\Desktop\Classes\ECE 4899\git_thelogicals\SPICE schematic\PFE V1\1\pfe.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Select "Design Resources"
-         "C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1\1\pfe.dsn"
+         "C:\Users\Cody\Desktop\Classes\ECE 4899\git_thelogicals\SPICE schematic\PFE V1\1\pfe.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
@@ -102,13 +102,20 @@
         (Placement "44 0 1 160 324 -8 -31 643 1286 117 267"))
       (Tab 0))
     (Doc
+      (Type "TextFile")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1382 52 373"))
+      (Path
+         "C:\Users\Cody\Desktop\Classes\ECE 4899\git_thelogicals\SPICE schematic\PFE V1\1\pfe-pspicefiles\schematic1\schematic1.net")
+      (Scroll "0"))
+    (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 643 0 352")
-        (Scroll "-144 0")
+        (Placement "44 2 3 -1 -1 -8 -31 78 1408 78 399")
+        (Scroll "-229 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\TIFFANY\DOCUMENTS\ENGINEERING\ECE4899 - SENIOR DESIGN\GIT_LOGICALS\SPICE SCHEMATIC\PFE V1\1\PFE.DSN")
+         "C:\USERS\CODY\DESKTOP\CLASSES\ECE 4899\GIT_THELOGICALS\SPICE SCHEMATIC\PFE V1\1\PFE.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))
