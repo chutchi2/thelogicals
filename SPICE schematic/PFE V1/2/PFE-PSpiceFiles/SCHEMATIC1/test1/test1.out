@@ -1,0 +1,141 @@
+
+**** 01/05/17 21:42:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test1"  [ C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Tiffany\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PFE
+L_L26         N00849 N00228  1nH  
+L_L27         N00856 N00235  1nH  
+L_L28         N00861 N00242  1nH  
+L_L29         N00868 N00249  1nH  
+R_R71         N00235 N00228  93.1 TC=0,0 
+R_R73         N00249 N00242  93.1 TC=0,0 
+C_C953         N00856 N00849  1p  TC=0,0 
+C_C955         N00868 N00861  1p  TC=0,0 
+C_C853         N00228 0  100pF  TC=0,0 
+C_C854         N00235 0  100pF  TC=0,0 
+C_C856         N00249 0  100pF  TC=0,0 
+C_C855         N00242 0  100pF  TC=0,0 
+R_R74         0 N01385  93.1 TC=0,0 
+R_R75         0 N01389  93.1 TC=0,0 
+R_R76         0 N01605  93.1 TC=0,0 
+R_R77         0 N01901  93.1 TC=0,0 
+R_R78         N01605 N01901  93.1 TC=0,0 
+R_R79         N01385 N01389  93.1 TC=0,0 
+L_L12         0 N00856  10nH  
+L_L11         N01385 N00849  10nH  
+Kn_K1         L_L11 L_L12     1 Kbreak
+L_L21         N01605 N00861  10nH  
+L_L22         0 N00868  10nH  
+Kn_K2         L_L21 L_L22     1 Kbreak
+C_C857         N02047 N01389  100p  TC=0,0 
+C_C858         N03264 N01901  100pF  TC=0,0 
+V_V3         N02047 0  
++SFFM 0 3 1.6G 10n 800M
+V_V4         N03264 0  
++SFFM 0 3 1.6G 10n 800M
+
+**** RESUMING test1.cir ****
+.END
+
+**** 01/05/17 21:42:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test1"  [ C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1
+
+
+ ****     Ferromagnetic Core MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Kbreak          
+       LEVEL    2            
+        AREA     .65         
+        PATH    8            
+          MS    1.289600E+06 
+           A    2.712800E+03 
+           C     .25001      
+
+
+**** 01/05/17 21:42:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test1"  [ C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00228)    0.0000 (N00235)    0.0000 (N00242)    0.0000 (N00249)    0.0000     
+
+(N00849)    0.0000 (N00856)    0.0000 (N00861)    0.0000 (N00868)    0.0000     
+
+(N01385)    0.0000 (N01389)    0.0000 (N01605)    0.0000 (N01901)    0.0000     
+
+(N02047)    0.0000 (N03264)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/05/17 21:42:18 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test1"  [ C:\Users\Tiffany\Documents\Engineering\ECE4899 - Senior Design\git_logicals\SPICE schematic\PFE V1
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+
