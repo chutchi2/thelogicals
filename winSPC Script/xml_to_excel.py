@@ -6,7 +6,7 @@ from datetime import datetime
 tree = ET.parse('Saturn[1234].xml')
 root = tree.getroot()
 
-wb = xlsxwriter.Workbook(datetime.now().strftime("%Y_%m_%d_%H_%M_%S")+'conversions.xls')
+wb = xlsxwriter.Workbook(datetime.now().strftime("%Y_%m_%d_%H_%M_%S")+'conversions.xlsx')
 ws = wb.add_worksheet()
 	
 value = root.findall('.//Value')
@@ -22,22 +22,26 @@ for Value in root.findall('.//Value'):
 			if Prop.get('Name') == 'Status':
 				for Value in Prop:
 					if Value is not None:
-						#count = count + 1
-						ws.write(count,1,Value.text)
+						count = count + 1
+						ws.write(1,count,Value.text)
 						#print(Value.text)
 			elif Prop.get('Name') == 'Numeric':
 				for Value in Prop:
 					if Value is not None:
 						#count = count + 1
-						ws.write(count,0,Value.text)
+						ws.write(2,count,Value.text)
 						#print(Value.text)
 			elif Prop.get('Name') == 'TS':
-				print(Prop.get('Name'))
+				#print(Prop.get('Name'))
 				for Prop in Prop:
 					if Prop is not None:
 						if Prop.get('Name') == 'StepName':
-							print(Prop.get('Name'))
+							for Value in Prop:
+								if Value is not None:
+									#count = count + 1
+									ws.write(0,count,Value.text)
+									print(Value.text)
+							
 
 
 wb.close()
-	
