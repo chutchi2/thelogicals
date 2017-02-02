@@ -1,0 +1,52 @@
+<Value ID='[619]'>
+	<Prop Type='TEResult' Flags='0x0'>
+		<Prop Name='Error' Type='Obj' TypeName='Error' Flags='0x400000'>
+			<Prop Name='Code' Type='Number' Flags='0x400000'>
+				<Value>0</Value>
+			</Prop>
+			<Prop Name='Msg' Type='String' Flags='0x400000'>
+				<Value></Value>
+			</Prop>
+			<Prop Name='Occurred' Type='Boolean' Flags='0x400000'>
+				<Value>False</Value>
+			</Prop>
+		</Prop>
+		<Prop Name='Status' Type='String' Flags='0x400000'>
+			<Value>2543</Value>
+		</Prop>
+		<Prop Name='ReportText' Type='String' Flags='0x400000'>
+			<Value></Value>
+		</Prop>
+		<Prop Name='Common' Type='Obj' TypeName='CommonResults' Flags='0x0'>
+		</Prop>
+		<Prop Name='TS' Type='Obj' Flags='0x0'>
+			<Prop Name='StartTime' Type='Number' Flags='0x0'>
+				<Value>168.9502522</Value>
+			</Prop>
+			<Prop Name='TotalTime' Type='Number' Flags='0x0'>
+				<Value>2.99e-005</Value>
+			</Prop>
+			<Prop Name='Index' Type='Number' Flags='0x0'>
+				<Value>17</Value>
+			</Prop>
+			<Prop Name='StepName' Type='String' Flags='0x0'>
+				<Value>FREQUENCY (MHz)</Value>
+			</Prop>
+			<Prop Name='StepGroup' Type='String' Flags='0x0'>
+				<Value>Main</Value>
+			</Prop>
+			<Prop Name='StepId' Type='String' Flags='0x0'>
+				<Value>ID#:vD7FY7ZTpESpSJqNLkl4uA</Value>
+			</Prop>
+			<Prop Name='Id' Type='Number' Flags='0x0'>
+				<Value>628</Value>
+			</Prop>
+			<Prop Name='StepType' Type='String' Flags='0x0'>
+				<Value>Label</Value>
+			</Prop>
+			<Prop Name='BlockLevel' Type='Number' Flags='0x0'>
+				<Value>2</Value>
+			</Prop>
+		</Prop>
+	</Prop>
+</Value>
