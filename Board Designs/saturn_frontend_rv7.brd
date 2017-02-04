@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+</layers>
+<board>
+<plain>
+</plain>
+<libraries>
+<library name="project_1">
+<packages>
+<package name="PAD_0PRIMARY">
+<description>Original name &lt;b&gt;PAD&lt;/b&gt;&lt;p&gt;</description>
+<smd name="1" x="0" y="0" dx="1.6002" dy="4.6482" layer="1"/>
+<text x="-0.8001" y="2.3241" size="2.54" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
+</package>
+<package name="PAD_1PRIMARY">
+<description>Original name &lt;b&gt;PAD&lt;/b&gt;&lt;p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.7112" dy="0.7112" layer="1" roundness="100"/>
+<text x="-0.3556" y="0.3556" size="2.54" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
+</package>
+<package name="PAD_2PRIMARY">
+<description>Original name &lt;b&gt;PAD&lt;/b&gt;&lt;p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.508" dy="0.508" layer="1" roundness="100"/>
+<text x="-0.254" y="0.254" size="2.54" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
+</package>
+<package name="PAD_3PRIMARY">
+<description>Original name &lt;b&gt;PAD&lt;/b&gt;&lt;p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.3048" dy="0.3556" layer="1"/>
+<text x="-0.1524" y="0.1778" size="2.54" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
+</package>
+<package name="PAD_4PRIMARY">
+<description>Original name &lt;b&gt;PAD&lt;/b&gt;&lt;p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.4572" dy="0.4572" layer="1" roundness="100"/>
+<text x="-0.2286" y="0.2286" size="2.54" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
+</package>
+<package name="PAD_5PRIMARY">
+<description>Original name &lt;b&gt;PAD&lt;/b&gt;&lt;p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+<text x="-0.254" y="0.254" size="2.54" layer="25" font="vector" ratio="10" rot="SR0">&gt;NAME</text>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="project_1">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="8mil"/>
+<param name="mdWirePad" value="8mil"/>
+<param name="mdWireVia" value="8mil"/>
+<param name="mdPadPad" value="8mil"/>
+<param name="mdPadVia" value="8mil"/>
+<param name="mdViaVia" value="8mil"/>
+<param name="mdSmdPad" value="8mil"/>
+<param name="mdSmdVia" value="8mil"/>
+<param name="mdSmdSmd" value="8mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="8mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="10mil"/>
+<param name="msDrill" value="24mil"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0"/>
+<param name="rvPadInner" value="0"/>
+<param name="rvPadBottom" value="0"/>
+<param name="rvViaOuter" value="0"/>
+<param name="rvViaInner" value="0"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
+<param name="rlMinPadTop" value="0mil"/>
+<param name="rlMaxPadTop" value="0mil"/>
+<param name="rlMinPadInner" value="0mil"/>
+<param name="rlMaxPadInner" value="0mil"/>
+<param name="rlMinPadBottom" value="0mil"/>
+<param name="rlMaxPadBottom" value="0mil"/>
+<param name="rlMinViaOuter" value="0mil"/>
+<param name="rlMaxViaOuter" value="0mil"/>
+<param name="rlMinViaInner" value="0mil"/>
+<param name="rlMaxViaInner" value="0mil"/>
+<param name="rlMinMicroViaOuter" value="0mil"/>
+<param name="rlMaxMicroViaOuter" value="0mil"/>
+<param name="rlMinMicroViaInner" value="0mil"/>
+<param name="rlMaxMicroViaInner" value="0mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="PAD4" library="project_1" package="PAD_0PRIMARY" value="" x="12.3824" y="73.5012" smashed="yes" rot="MR0">
+<attribute name="NAME" x="12.3824" y="73.5012" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD33" library="project_1" package="PAD_1PRIMARY" value="" x="3.0797" y="48.1139" smashed="yes">
+<attribute name="NAME" x="3.0797" y="48.1139" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3203" library="project_1" package="PAD_2PRIMARY" value="" x="2.8917" y="46.7296" smashed="yes" rot="MR0">
+<attribute name="NAME" x="2.8917" y="46.7296" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3204" library="project_1" package="PAD_2PRIMARY" value="" x="4.1109" y="46.7118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="4.1109" y="46.7118" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3205" library="project_1" package="PAD_2PRIMARY" value="" x="3.3997" y="50.2602" smashed="yes" rot="MR0">
+<attribute name="NAME" x="3.3997" y="50.2602" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3206" library="project_1" package="PAD_2PRIMARY" value="" x="5.2539" y="50.4964" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.2539" y="50.4964" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3207" library="project_1" package="PAD_2PRIMARY" value="" x="5.2539" y="53.9254" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.2539" y="53.9254" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3208" library="project_1" package="PAD_2PRIMARY" value="" x="5.2539" y="52.7824" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.2539" y="52.7824" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3209" library="project_1" package="PAD_2PRIMARY" value="" x="5.2539" y="51.6394" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.2539" y="51.6394" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3210" library="project_1" package="PAD_2PRIMARY" value="" x="5.5079" y="55.1954" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.5079" y="55.1954" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3211" library="project_1" package="PAD_2PRIMARY" value="" x="3.3997" y="57.8802" smashed="yes" rot="MR0">
+<attribute name="NAME" x="3.3997" y="57.8802" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3212" library="project_1" package="PAD_2PRIMARY" value="" x="4.5935" y="65.7364" smashed="yes" rot="MR0">
+<attribute name="NAME" x="4.5935" y="65.7364" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3213" library="project_1" package="PAD_2PRIMARY" value="" x="3.1965" y="65.7364" smashed="yes" rot="MR0">
+<attribute name="NAME" x="3.1965" y="65.7364" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3214" library="project_1" package="PAD_2PRIMARY" value="" x="3.1965" y="67.2604" smashed="yes" rot="MR0">
+<attribute name="NAME" x="3.1965" y="67.2604" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3215" library="project_1" package="PAD_2PRIMARY" value="" x="4.5935" y="67.2604" smashed="yes" rot="MR0">
+<attribute name="NAME" x="4.5935" y="67.2604" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3216" library="project_1" package="PAD_2PRIMARY" value="" x="3.1965" y="68.4034" smashed="yes" rot="MR0">
+<attribute name="NAME" x="3.1965" y="68.4034" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3217" library="project_1" package="PAD_2PRIMARY" value="" x="3.3997" y="70.5802" smashed="yes" rot="MR0">
+<attribute name="NAME" x="3.3997" y="70.5802" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3218" library="project_1" package="PAD_2PRIMARY" value="" x="3.5267" y="75.0252" smashed="yes" rot="MR0">
+<attribute name="NAME" x="3.5267" y="75.0252" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3422" library="project_1" package="PAD_2PRIMARY" value="" x="7.7939" y="46.7118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.7939" y="46.7118" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3423" library="project_1" package="PAD_2PRIMARY" value="" x="5.8889" y="46.7118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.8889" y="46.7118" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3424" library="project_1" package="PAD_2PRIMARY" value="" x="7.1843" y="48.9978" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.1843" y="48.9978" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3425" library="project_1" package="PAD_2PRIMARY" value="" x="8.9623" y="48.9978" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.9623" y="48.9978" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3426" library="project_1" package="PAD_2PRIMARY" value="" x="8.4797" y="47.7202" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.4797" y="47.7202" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3427" library="project_1" package="PAD_2PRIMARY" value="" x="5.7619" y="49.3534" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.7619" y="49.3534" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3428" library="project_1" package="PAD_2PRIMARY" value="" x="7.1843" y="51.2838" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.1843" y="51.2838" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3429" library="project_1" package="PAD_2PRIMARY" value="" x="8.9623" y="51.2838" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.9623" y="51.2838" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3430" library="project_1" package="PAD_2PRIMARY" value="" x="6.7779" y="53.5444" smashed="yes" rot="MR0">
+<attribute name="NAME" x="6.7779" y="53.5444" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3431" library="project_1" package="PAD_2PRIMARY" value="" x="7.6415" y="53.5698" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.6415" y="53.5698" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3432" library="project_1" package="PAD_2PRIMARY" value="" x="6.7779" y="52.4014" smashed="yes" rot="MR0">
+<attribute name="NAME" x="6.7779" y="52.4014" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3433" library="project_1" package="PAD_2PRIMARY" value="" x="6.9049" y="54.5604" smashed="yes" rot="MR0">
+<attribute name="NAME" x="6.9049" y="54.5604" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3434" library="project_1" package="PAD_2PRIMARY" value="" x="8.5559" y="54.5604" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.5559" y="54.5604" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3435" library="project_1" package="PAD_2PRIMARY" value="" x="8.0479" y="56.2114" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.0479" y="56.2114" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3436" library="project_1" package="PAD_2PRIMARY" value="" x="6.5239" y="56.0844" smashed="yes" rot="MR0">
+<attribute name="NAME" x="6.5239" y="56.0844" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3437" library="project_1" package="PAD_2PRIMARY" value="" x="8.4797" y="57.8802" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.4797" y="57.8802" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3438" library="project_1" package="PAD_2PRIMARY" value="" x="5.9397" y="62.9577" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.9397" y="62.9577" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3439" library="project_1" package="PAD_2PRIMARY" value="" x="8.6575" y="65.1014" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.6575" y="65.1014" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3440" library="project_1" package="PAD_2PRIMARY" value="" x="8.6575" y="66.6254" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.6575" y="66.6254" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3441" library="project_1" package="PAD_2PRIMARY" value="" x="7.5145" y="67.1334" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.5145" y="67.1334" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3442" library="project_1" package="PAD_2PRIMARY" value="" x="6.1175" y="67.2604" smashed="yes" rot="MR0">
+<attribute name="NAME" x="6.1175" y="67.2604" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3443" library="project_1" package="PAD_2PRIMARY" value="" x="7.3875" y="65.4824" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.3875" y="65.4824" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3444" library="project_1" package="PAD_2PRIMARY" value="" x="5.9905" y="65.7364" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.9905" y="65.7364" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3445" library="project_1" package="PAD_2PRIMARY" value="" x="7.0827" y="71.7232" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.0827" y="71.7232" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3446" library="project_1" package="PAD_2PRIMARY" value="" x="7.0827" y="73.5012" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.0827" y="73.5012" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3447" library="project_1" package="PAD_2PRIMARY" value="" x="5.9397" y="73.1202" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.9397" y="73.1202" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3448" library="project_1" package="PAD_2PRIMARY" value="" x="7.0827" y="75.0252" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.0827" y="75.0252" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3668" library="project_1" package="PAD_2PRIMARY" value="" x="11.0959" y="46.7118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.0959" y="46.7118" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3669" library="project_1" package="PAD_2PRIMARY" value="" x="9.5719" y="46.7118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.5719" y="46.7118" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3670" library="project_1" package="PAD_2PRIMARY" value="" x="11.6293" y="48.6168" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.6293" y="48.6168" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3671" library="project_1" package="PAD_2PRIMARY" value="" x="12.3913" y="48.6168" smashed="yes" rot="MR0">
+<attribute name="NAME" x="12.3913" y="48.6168" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3672" library="project_1" package="PAD_2PRIMARY" value="" x="10.4863" y="48.8708" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.4863" y="48.8708" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3673" library="project_1" package="PAD_2PRIMARY" value="" x="12.3913" y="51.5378" smashed="yes" rot="MR0">
+<attribute name="NAME" x="12.3913" y="51.5378" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3674" library="project_1" package="PAD_2PRIMARY" value="" x="10.4863" y="51.4108" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.4863" y="51.4108" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3675" library="project_1" package="PAD_2PRIMARY" value="" x="11.6293" y="51.5378" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.6293" y="51.5378" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3676" library="project_1" package="PAD_2PRIMARY" value="" x="10.6895" y="53.5698" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.6895" y="53.5698" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3677" library="project_1" package="PAD_2PRIMARY" value="" x="12.0865" y="56.8464" smashed="yes" rot="MR0">
+<attribute name="NAME" x="12.0865" y="56.8464" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3678" library="project_1" package="PAD_2PRIMARY" value="" x="11.8579" y="55.9574" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.8579" y="55.9574" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3679" library="project_1" package="PAD_2PRIMARY" value="" x="11.4769" y="54.9414" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.4769" y="54.9414" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3680" library="project_1" package="PAD_2PRIMARY" value="" x="9.4449" y="56.2114" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.4449" y="56.2114" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3681" library="project_1" package="PAD_2PRIMARY" value="" x="9.8259" y="54.5604" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.8259" y="54.5604" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3682" library="project_1" package="PAD_2PRIMARY" value="" x="10.4609" y="56.8464" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.4609" y="56.8464" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3683" library="project_1" package="PAD_2PRIMARY" value="" x="10.5625" y="58.6244" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.5625" y="58.6244" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3684" library="project_1" package="PAD_2PRIMARY" value="" x="10.4355" y="57.8624" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.4355" y="57.8624" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3685" library="project_1" package="PAD_2PRIMARY" value="" x="9.9275" y="64.0854" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.9275" y="64.0854" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3686" library="project_1" package="PAD_2PRIMARY" value="" x="11.6192" y="61.8604" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.6192" y="61.8604" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3687" library="project_1" package="PAD_2PRIMARY" value="" x="10.7149" y="62.4344" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.7149" y="62.4344" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3688" library="project_1" package="PAD_2PRIMARY" value="" x="10.7149" y="61.2914" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.7149" y="61.2914" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3689" library="project_1" package="PAD_2PRIMARY" value="" x="12.4929" y="61.2914" smashed="yes" rot="MR0">
+<attribute name="NAME" x="12.4929" y="61.2914" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3690" library="project_1" package="PAD_2PRIMARY" value="" x="12.4929" y="62.4344" smashed="yes" rot="MR0">
+<attribute name="NAME" x="12.4929" y="62.4344" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3691" library="project_1" package="PAD_2PRIMARY" value="" x="9.9275" y="63.138" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.9275" y="63.138" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3692" library="project_1" package="PAD_2PRIMARY" value="" x="11.8325" y="65.8634" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.8325" y="65.8634" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3693" library="project_1" package="PAD_2PRIMARY" value="" x="11.5785" y="65.1014" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.5785" y="65.1014" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3694" library="project_1" package="PAD_2PRIMARY" value="" x="10.4355" y="66.7524" smashed="yes" rot="MR0">
+<attribute name="NAME" x="10.4355" y="66.7524" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3695" library="project_1" package="PAD_2PRIMARY" value="" x="11.8325" y="66.8794" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.8325" y="66.8794" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3696" library="project_1" package="PAD_2PRIMARY" value="" x="9.9275" y="65.1014" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.9275" y="65.1014" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3697" library="project_1" package="PAD_2PRIMARY" value="" x="11.8325" y="68.0224" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.8325" y="68.0224" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3698" library="project_1" package="PAD_2PRIMARY" value="" x="11.8325" y="69.0384" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.8325" y="69.0384" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3699" library="project_1" package="PAD_2PRIMARY" value="" x="11.8325" y="70.0544" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.8325" y="70.0544" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3700" library="project_1" package="PAD_2PRIMARY" value="" x="11.1467" y="73.5012" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.1467" y="73.5012" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3701" library="project_1" package="PAD_2PRIMARY" value="" x="11.1467" y="71.7232" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.1467" y="71.7232" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3702" library="project_1" package="PAD_2PRIMARY" value="" x="9.6227" y="71.7232" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.6227" y="71.7232" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3703" library="project_1" package="PAD_2PRIMARY" value="" x="9.6227" y="73.5012" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.6227" y="73.5012" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3704" library="project_1" package="PAD_2PRIMARY" value="" x="11.1467" y="75.0252" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.1467" y="75.0252" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3705" library="project_1" package="PAD_2PRIMARY" value="" x="9.6227" y="75.0252" smashed="yes" rot="MR0">
+<attribute name="NAME" x="9.6227" y="75.0252" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3766" library="project_1" package="PAD_2PRIMARY" value="" x="12.7469" y="46.7118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="12.7469" y="46.7118" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3767" library="project_1" package="PAD_2PRIMARY" value="" x="14.2709" y="46.7118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="14.2709" y="46.7118" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3768" library="project_1" package="PAD_2PRIMARY" value="" x="15.7695" y="46.7118" smashed="yes" rot="MR0">
+<attribute name="NAME" x="15.7695" y="46.7118" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3769" library="project_1" package="PAD_2PRIMARY" value="" x="14.8043" y="48.6168" smashed="yes" rot="MR0">
+<attribute name="NAME" x="14.8043" y="48.6168" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3770" library="project_1" package="PAD_2PRIMARY" value="" x="15.8203" y="48.6168" smashed="yes" rot="MR0">
+<attribute name="NAME" x="15.8203" y="48.6168" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3771" library="project_1" package="PAD_2PRIMARY" value="" x="13.5343" y="48.7438" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.5343" y="48.7438" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3772" library="project_1" package="PAD_2PRIMARY" value="" x="13.5597" y="47.7202" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.5597" y="47.7202" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3773" library="project_1" package="PAD_2PRIMARY" value="" x="14.8043" y="51.5378" smashed="yes" rot="MR0">
+<attribute name="NAME" x="14.8043" y="51.5378" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3774" library="project_1" package="PAD_2PRIMARY" value="" x="13.5343" y="51.4108" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.5343" y="51.4108" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3775" library="project_1" package="PAD_2PRIMARY" value="" x="15.8203" y="51.5378" smashed="yes" rot="MR0">
+<attribute name="NAME" x="15.8203" y="51.5378" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3778" library="project_1" package="PAD_2PRIMARY" value="" x="13.4124" y="57.329" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.4124" y="57.329" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3784" library="project_1" package="PAD_2PRIMARY" value="" x="13.3311" y="63.2396" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.3311" y="63.2396" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3785" library="project_1" package="PAD_2PRIMARY" value="" x="13.3565" y="65.8634" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.3565" y="65.8634" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3786" library="project_1" package="PAD_2PRIMARY" value="" x="13.3565" y="66.8794" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.3565" y="66.8794" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3787" library="project_1" package="PAD_2PRIMARY" value="" x="13.2778" y="64.4334" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.2778" y="64.4334" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3788" library="project_1" package="PAD_2PRIMARY" value="" x="13.3565" y="70.0544" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.3565" y="70.0544" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3789" library="project_1" package="PAD_2PRIMARY" value="" x="13.3565" y="69.0384" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.3565" y="69.0384" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3790" library="project_1" package="PAD_2PRIMARY" value="" x="13.3565" y="68.0224" smashed="yes" rot="MR0">
+<attribute name="NAME" x="13.3565" y="68.0224" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3791" library="project_1" package="PAD_2PRIMARY" value="" x="15.5917" y="73.5012" smashed="yes" rot="MR0">
+<attribute name="NAME" x="15.5917" y="73.5012" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3792" library="project_1" package="PAD_2PRIMARY" value="" x="15.5917" y="71.7232" smashed="yes" rot="MR0">
+<attribute name="NAME" x="15.5917" y="71.7232" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3793" library="project_1" package="PAD_2PRIMARY" value="" x="14.0677" y="71.7232" smashed="yes" rot="MR0">
+<attribute name="NAME" x="14.0677" y="71.7232" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3794" library="project_1" package="PAD_2PRIMARY" value="" x="14.0677" y="73.5012" smashed="yes" rot="MR0">
+<attribute name="NAME" x="14.0677" y="73.5012" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3795" library="project_1" package="PAD_2PRIMARY" value="" x="15.5917" y="75.0252" smashed="yes" rot="MR0">
+<attribute name="NAME" x="15.5917" y="75.0252" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3796" library="project_1" package="PAD_2PRIMARY" value="" x="14.0677" y="75.0252" smashed="yes" rot="MR0">
+<attribute name="NAME" x="14.0677" y="75.0252" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3843" library="project_1" package="PAD_2PRIMARY" value="" x="16.7144" y="46.9125" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.7144" y="46.9125" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3854" library="project_1" package="PAD_2PRIMARY" value="" x="16.7144" y="48.5127" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.7144" y="48.5127" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3855" library="project_1" package="PAD_2PRIMARY" value="" x="16.7144" y="47.7126" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.7144" y="47.7126" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3871" library="project_1" package="PAD_2PRIMARY" value="" x="16.0997" y="62.9577" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.0997" y="62.9577" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3872" library="project_1" package="PAD_2PRIMARY" value="" x="17.611" y="62.0585" smashed="yes" rot="MR0">
+<attribute name="NAME" x="17.611" y="62.0585" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3873" library="project_1" package="PAD_2PRIMARY" value="" x="18.9318" y="62.0585" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.9318" y="62.0585" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3874" library="project_1" package="PAD_2PRIMARY" value="" x="18.6397" y="65.5002" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.6397" y="65.5002" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3875" library="project_1" package="PAD_2PRIMARY" value="" x="16.0997" y="68.0402" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.0997" y="68.0402" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3876" library="project_1" package="PAD_2PRIMARY" value="" x="18.6397" y="70.5802" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.6397" y="70.5802" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3877" library="project_1" package="PAD_2PRIMARY" value="" x="18.1317" y="73.5012" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.1317" y="73.5012" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3878" library="project_1" package="PAD_2PRIMARY" value="" x="18.1317" y="71.7232" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.1317" y="71.7232" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3879" library="project_1" package="PAD_2PRIMARY" value="" x="18.1317" y="75.0252" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.1317" y="75.0252" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3963" library="project_1" package="PAD_2PRIMARY" value="" x="21.1797" y="62.9577" smashed="yes" rot="MR0">
+<attribute name="NAME" x="21.1797" y="62.9577" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3964" library="project_1" package="PAD_2PRIMARY" value="" x="21.1797" y="68.0402" smashed="yes" rot="MR0">
+<attribute name="NAME" x="21.1797" y="68.0402" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD3965" library="project_1" package="PAD_2PRIMARY" value="" x="21.5607" y="75.0252" smashed="yes" rot="MR0">
+<attribute name="NAME" x="21.5607" y="75.0252" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD5872" library="project_1" package="PAD_3PRIMARY" value="" x="16.7347" y="46.2216" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.7347" y="46.2216" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD5873" library="project_1" package="PAD_3PRIMARY" value="" x="16.7347" y="45.6628" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.7347" y="45.6628" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD7072" library="project_1" package="PAD_4PRIMARY" value="" x="3.0797" y="48.1139" smashed="yes" rot="MR0">
+<attribute name="NAME" x="3.0797" y="48.1139" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD7935" library="project_1" package="PAD_5PRIMARY" value="" x="18.2714" y="62.0585" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.2714" y="62.0585" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD8113" library="project_1" package="PAD_0PRIMARY" value="" x="8.3527" y="73.4301" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.3527" y="73.4301" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+<element name="PAD8114" library="project_1" package="PAD_0PRIMARY" value="" x="16.8363" y="73.4301" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.8363" y="73.4301" size="1.6667" layer="25" font="vector" ratio="12" rot="SR0" display="off"/>
+</element>
+</elements>
+<signals>
+</signals>
+</board>
+</drawing>
+</eagle>
