@@ -1,9 +1,0 @@
-The conversion of the project was successful.
-
-The new directory structure is as follows:
-
-C:/Users/Tiffany/Documents/Engineering/ECE4899 - Senior Design/git_logicals/SPICE schematic/PFE V1/1
-    PFE.opj
-    pfe.dsn
-C:/Users/Tiffany/Documents/Engineering/ECE4899 - Senior Design/git_logicals/SPICE schematic/PFE V1/1/PFE-PSpiceFiles
-C:/Users/Tiffany/Documents/Engineering/ECE4899 - Senior Design/git_logicals/SPICE schematic/PFE V1/1/PFE-PSpiceFiles/SCHEMATIC1
