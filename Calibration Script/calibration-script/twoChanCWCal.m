@@ -73,14 +73,14 @@ rbw=60e6/4096;
 
 % new scpi query for instrument data, instrument, duration, rbw, frequency
 % set the siggen1 
-fprintf(siggenS1,'*RST');%Reset the function generator
-fprintf(siggenS1,'FUNCtion SINusoid');%Select waveshape
-fprintf(siggenS1,' [:SENSe]:BANDwidth|BWIDth[:RESolution] 54e6 ');%Set the bandwidth
+sprintf(siggenS1,'*RST');%Reset the function generator
+sprintf(siggenS1,'FUNCtion SINusoid');%Select waveshape
+sprintf(siggenS1,' [:SENSe]:BANDwidth|BWIDth[:RESolution] 54e6 ');%Set the bandwidth
 %May also be INFinity, as when using oscilloscope or DMM
-fprintf(siggenS1,'FREQuency: 850e6');%Set the frequency to 850MHz
-fprintf(siggenS1, ' :CAPTure[1]:DURAtion:TIME .005')
+sprintf(siggenS1,'FREQuency: 850e6');%Set the frequency to 850MHz
+sprintf(siggenS1, ' :CAPTure[1]:DURAtion:TIME .005')
 %fprintf(SG1,'VOLTage 1');%Set the amplitude to 1 Vpp
-fprintf(siggenS1,'OUTPut ON');%Turn on the instrument output
+sprintf(siggenS1,'OUTPut ON');%Turn on the instrument output
 
 %[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 %	prefix :<http://www.sat.com/2011/measure#>\
@@ -103,7 +103,7 @@ offset=1.0e6;
   %fprintf('SOURce
 
 	%% Prime by setting to port #1...
-  sprintf(siggenS1, ':SENS1:CORR:COLL:METH:SOLT1 1');
+  sprintf('cw_cal_%i', cal.sn, ':SENS1:CORR:COLL:METH:SOLT1 1');
   
 	%[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 	%	prefix :<http://www.sat.com/2011/measure#>\
@@ -114,9 +114,9 @@ offset=1.0e6;
 			
 	for g=amplifierGainDB
   %% Set gain and DC offset tracking...
-  dc_offset = fprintf(siggenS1, ':DIGital:DATA:IOFFset 0');
+  dc_offset = sprintf('cw_cal_%i', cal.sn, ':DIGital:DATA:IOFFset 0');
   %dc_tracking = 
-  attenuation = fprintf(siggenS1, 'INP:ATT 0');
+  attenuation = sprintf('cw_cal_%i', cal.sn, 'INP:ATT 0');
   
 
 
