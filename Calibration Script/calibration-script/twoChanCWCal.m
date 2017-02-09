@@ -20,6 +20,7 @@ sataddr = server.addr
 powerDBMat = [];
 
 %set up sockets, shall we use socket for satdsp?
+% 
 siggenS1=socket
 siggenS2=socket
 connect(siggenS1,siggen1);
@@ -43,7 +44,7 @@ cal.amplifierGainDB=amplifierGainDB;
 
 %create work directory
 mkdir(sprintf('cw_cal_%i',cal.sn)); % attach calibration to serial number
-
+% formats output
 fprintf(siggenS1, 'MMEMory:STORe:DATA "cw_cal_%i","CSV Formatted Data","Trace","Displayed",-1');
 
 %[reply status]=urlread([ sataddr '/sparql'],'get',{'format','csv','query'," \
@@ -71,7 +72,7 @@ rbw=60e6/4096;
 % prints to system the instrument serial number, durationm rbw, frequency
 
 % new scpi query for instrument data, instrument, duration, rbw, frequency
-
+% set the siggen1 
 fprintf(siggenS1,'*RST');%Reset the function generator
 fprintf(siggenS1,'FUNCtion SINusoid');%Select waveshape
 fprintf(siggenS1,' [:SENSe]:BANDwidth|BWIDth[:RESolution] 54e6 ');%Set the bandwidth
@@ -99,20 +100,22 @@ offset=1.0e6;
 
 	%%printf("Pausing... Install inject cable on port #%d\n",p);
 	%%yes_or_no();
-  fprintf('SOURce
+  %fprintf('SOURce
 
 	%% Prime by setting to port #1...
-	[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
-		prefix :<http://www.sat.com/2011/measure#>\
-		insert data{\
-				<#%s> :port <#RX1> .\
-			}",instrument)});
+  sprintf(siggenS1, ':SENS1:CORR:COLL:METH:SOLT1 1');
+  
+	%[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
+	%	prefix :<http://www.sat.com/2011/measure#>\
+	%	insert data{\
+	%			<#%s> :port <#RX1> .\
+	%		}",instrument)});
 			
 			
 	for g=amplifierGainDB
   %% Set gain and DC offset tracking...
   dc_offset = fprintf(siggenS1, ':DIGital:DATA:IOFFset 0');
-  dc_tracking = 
+  %dc_tracking = 
   attenuation = fprintf(siggenS1, 'INP:ATT 0');
   
 
@@ -154,7 +157,7 @@ offset=1.0e6;
 			
 
 			% Sample Port #1
-      %% what is being sampled?
+      %% what is being sampled? What needs to be documented??
       
 			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 				prefix :<http://www.sat.com/2011/measure#>\
@@ -163,7 +166,7 @@ offset=1.0e6;
 				}",instrument)});
 
             % SPARQl selects R1 port
-            % 
+            % reads from port 1
 
 			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 				prefix :<http://www.sat.com/2011/measure#>\
@@ -173,7 +176,7 @@ offset=1.0e6;
 
             % f is set in
 				
-			%load spectrum
+			%load spectrum data to directory
 
 			spectrum=sprintf('cw_cal_%i/dump.mat',cal.sn);
 			urlwrite(sprintf('%s/r/_11a',sataddr),spectrum);%URI should not be hard-coded
@@ -192,7 +195,7 @@ offset=1.0e6;
 				}",instrument)});
 
             % select channel 2
-            % what info is being taken from channel 2?
+            % what info is being sampled from channel 2?
 
 			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 				prefix :<http://www.sat.com/2011/measure#>\
