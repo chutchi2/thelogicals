@@ -11,10 +11,10 @@ pwrDB = -10;
 %%
 %%
 % add actual IP address * TODO *
-SG1 = visa('agilent','TCPIP::10.50.228.107::INSTR');
-SG2 = visa('agilent','TCPIP::10.50.228.107::INSTR');
-fopen(SG1);
-fopen(SG2);
+%SG1 = visa('agilent','TCPIP::10.50.228.107::INSTR');
+%SG2 = visa('agilent','TCPIP::10.50.228.107::INSTR');
+%fopen(SG1);
+%fopen(SG2);
 
 sataddr = server.addr
 powerDBMat = [];
