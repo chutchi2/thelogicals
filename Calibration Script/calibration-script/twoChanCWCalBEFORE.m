@@ -7,15 +7,6 @@ pkg load sockets
 pwrDB = -10;
 %pwrDB = -25;
 
-% connects to the signal generator and opens
-%%
-%%
-% add actual IP address * TODO *
-SG1 = visa('agilent','TCPIP::10.50.228.107::INSTR');
-SG2 = visa('agilent','TCPIP::10.50.228.107::INSTR');
-fopen(SG1);
-fopen(SG2);
-
 sataddr = server.addr
 powerDBMat = [];
 
@@ -32,28 +23,21 @@ send(siggenS2,"*IDN?\n")
 char(recv(siggenS2,100))
 
 
-% query the serial number and create directory to save data
-% csv output for easy parsing
-cal.sn=sscanf(':FORMat:DATA? ! Query','%i');
-
+%query the serial number and create directory to save data
+%csv output for easy parsing
+[reply status]=urlread([ sataddr '/sparql'],'get',{'format','csv','query'," \
+	prefix :<http://www.sat.com/2014/db#> \
+	select * where{ \
+		<#current> :serial ?s . \
+	}"});
+[a b c d]=regexp(reply,'\d+'); % input numbers
+cal.sn=sscanf(d{1},'%i');    %first match
 cal.t=time;
 cal.cal_loc=1; %COS
 cal.LO_f=LO_f;
 cal.amplifierGainDB=amplifierGainDB;
-
 %create work directory
 mkdir(sprintf('cw_cal_%i',cal.sn)); % attach calibration to serial number
-
-fprintf(siggenS1, 'MMEMory:STORe:DATA "cw_cal_%i","CSV Formatted Data","Trace","Displayed",-1');
-
-%[reply status]=urlread([ sataddr '/sparql'],'get',{'format','csv','query'," \
-%	prefix :<http://www.sat.com/2014/db#> \
-%	select * where{ \
-%		<#current> :serial ?s . \
-%	}"});
-%[a b c d]=regexp(reply,'\d+'); % input numbers
-%cal.sn=sscanf(d{1},'%i');    %first match
-
 
 %set up the spectrum
 %duration=0.003;
@@ -61,32 +45,21 @@ duration=0.005;
 %rbw=60e6/256;
 rbw=60e6/4096;
 
-% bw - bandwidth 
+% bw
 % cf => calibration frequency?
 % duration
 % attenuation
-% rbw - resolution band width
+% rbw
 % vbw
 % window
 % prints to system the instrument serial number, durationm rbw, frequency
 
-% new scpi query for instrument data, instrument, duration, rbw, frequency
-
-fprintf(siggenS1,'*RST');%Reset the function generator
-fprintf(siggenS1,'FUNCtion SINusoid');%Select waveshape
-fprintf(siggenS1,' [:SENSe]:BANDwidth|BWIDth[:RESolution] 54e6 ');%Set the bandwidth
-%May also be INFinity, as when using oscilloscope or DMM
-fprintf(siggenS1,'FREQuency: 850e6');%Set the frequency to 850MHz
-fprintf(siggenS1, ' :CAPTure[1]:DURAtion:TIME .005')
-%fprintf(SG1,'VOLTage 1');%Set the amplitude to 1 Vpp
-fprintf(siggenS1,'OUTPut ON');%Turn on the instrument output
-
-%[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
-%	prefix :<http://www.sat.com/2011/measure#>\
-%	insert data{\
-%		<#%s> :bw \"54e6\";:cf \".8e9\";:duration %f;:attenuation 0 .\
-%		<#_11a> :rbw %f;:vbw %f;:window <#flattop> .\
-%	}",instrument,duration,rbw,1/duration)})
+[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
+	prefix :<http://www.sat.com/2011/measure#>\
+	insert data{\
+		<#%s> :bw \"54e6\";:cf \".8e9\";:duration %f;:attenuation 0 .\
+		<#_11a> :rbw %f;:vbw %f;:window <#flattop> .\
+	}",instrument,duration,rbw,1/duration)})
 tracesCh1=[];
 gainCh1=[];
 tracesCh2=[];
@@ -99,7 +72,6 @@ offset=1.0e6;
 
 	%%printf("Pausing... Install inject cable on port #%d\n",p);
 	%%yes_or_no();
-  fprintf('SOURce
 
 	%% Prime by setting to port #1...
 	[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
@@ -110,18 +82,13 @@ offset=1.0e6;
 			
 			
 	for g=amplifierGainDB
-  %% Set gain and DC offset tracking...
-  dc_offset = fprintf(siggenS1, ':DIGital:DATA:IOFFset 0');
-  dc_tracking = 
-  attenuation = fprintf(siggenS1, 'INP:ATT 0');
-  
 
-
-	%	[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
-	%		prefix :<http://www.sat.com/2011/measure#>\
-	%		insert data{\
-	%			<#s> :gain %i;:attenuation 0;:dc_tracking 1;:dc_offset 0 .\
-	%		}",g)});
+		%% Set gain and DC offset tracking...
+		[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
+			prefix :<http://www.sat.com/2011/measure#>\
+			insert data{\
+				<#s> :gain %i;:attenuation 0;:dc_tracking 1;:dc_offset 0 .\
+			}",g)});
 
         % adjusting gain g in a loop
         % #%s compared to #s?????
@@ -154,8 +121,6 @@ offset=1.0e6;
 			
 
 			% Sample Port #1
-      %% what is being sampled?
-      
 			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 				prefix :<http://www.sat.com/2011/measure#>\
 				insert data{\
@@ -163,7 +128,6 @@ offset=1.0e6;
 				}",instrument)});
 
             % SPARQl selects R1 port
-            % 
 
 			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 				prefix :<http://www.sat.com/2011/measure#>\
@@ -192,7 +156,6 @@ offset=1.0e6;
 				}",instrument)});
 
             % select channel 2
-            % what info is being taken from channel 2?
 
 			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 				prefix :<http://www.sat.com/2011/measure#>\
