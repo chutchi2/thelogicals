@@ -1,0 +1,44 @@
+* source PFEWSMA
+C_C857         N00232 N12621 C_C857 100p  TC=0,0 
+.model        C_C857 CAP C=1 DEV=1% TC1=0 TC2=0 VC1=0 VC2=0
+R_R75         0 N00232 R_R75 93.1 TC=0,0 
+.model        R_R75 RES R=1 DEV=1% TC1=0 TC2=0
+R_R79         N01142 N00232 R_R79 93.1 TC=0,0 
+.model        R_R79 RES R=1 DEV=1% TC1=0 TC2=0
+R_R74         0 N01142 R_R74 93.1 TC=0,0 
+.model        R_R74 RES R=1 DEV=1% TC1=0 TC2=0
+L_L11         N01142 N02144 L_L11 10nH  
+.model        l_L11 IND L=1 DEV=1% TC1=0 TC2=0 IL1=0 IL2=0
+L_L12         0 N01867 L_L12 10nH  
+.model        l_L12 IND L=1 DEV=1% TC1=0 TC2=0 IL1=0 IL2=0
+Kn_K1         L_L11 L_L12     1 Kbreak
+C_C953         N02144 N01867 C_C953 1p  TC=0,0 
+.model        C_C953 CAP C=1 DEV=1% TC1=0 TC2=0 VC1=0 VC2=0
+L_L26         N02144 N02906 L_L26 1nH  
+.model        l_L26 IND L=1 DEV=1% TC1=0 TC2=0 IL1=0 IL2=0
+V_V1         N025340 0  AC 5
++SIN 0 5 1.9G 0 0 0
+L_L27         N01867 N02914 L_L27 1nH  
+.model        l_L27 IND L=1 DEV=1% TC1=0 TC2=0 IL1=0 IL2=0
+R_R71         N02914 N02906 R_R71 93.1 TC=0,0 
+.model        R_R71 RES R=1 DEV=1% TC1=0 TC2=0
+C_C853         0 N02906 C_C853 100p  TC=0,0 
+.model        C_C853 CAP C=1 DEV=1% TC1=0 TC2=0 VC1=0 VC2=0
+C_C854         0 N02914 C_C854 100p  TC=0,0 
+.model        C_C854 CAP C=1 DEV=1% TC1=0 TC2=0 VC1=0 VC2=0
+R_R1b         N07707 N12621 R_R1b 1.726 TC=0,0 
+.model        R_R1b RES R=1 DEV=1% TC1=0 TC2=0
+R_R1a         N076011 N07707 R_R1a 1.726 TC=0,0 
+.model        R_R1a RES R=1 DEV=1% TC1=0 TC2=0
+R_R2a         0 N07707 R_R2a 723.2 TC=0,0 
+.model        R_R2a RES R=1 DEV=1% TC1=0 TC2=0
+C_C859         N076011 N13561 C_C859 100p  TC=0,0 
+.model        C_C859 CAP C=1 DEV=1% TC1=0 TC2=0 VC1=0 VC2=0
+R_R1         N025340 N16260  50 TC=0,0 
+R_R2         0 N13561  50 TC=0,0 
+R_R_open         0 N15543  10E12 TC=0,0 
+T_T1         N16260 0 N109082 0 Z0=50 TD=4.45E-11  
+T_T2         N14912 0 N13561 0 Z0=50 TD=1.41E-10  
+T_T3         N11576 0 N15543 0 Z0=175 TD=1.13E-11  
+L_L1         N109082 N14912  5.6nH  
+L_L2         N11576 N14912  2.72nH  
