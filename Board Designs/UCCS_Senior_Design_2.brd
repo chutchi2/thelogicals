@@ -747,10 +747,6 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="S$34">
 </signal>
-<signal name="S$81">
-<contactref element="R25" pad="1"/>
-<wire x1="31.4912" y1="24.7986" x2="31.5016" y2="25.0882" width="0.4064" layer="1"/>
-</signal>
 <signal name="S$10">
 <contactref element="R16" pad="1"/>
 <contactref element="R25" pad="2"/>
@@ -906,6 +902,16 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="50.25" y="49.8"/>
 <vertex x="11.75" y="49.8"/>
 </polygon>
+</signal>
+<signal name="S$85">
+<contactref element="R17" pad="1"/>
+<contactref element="C857" pad="1"/>
+<wire x1="31.4602" y1="35.1456" x2="31.4912" y2="35.1456" width="0.4064" layer="1"/>
+<wire x1="31.4912" y1="35.1456" x2="31.4912" y2="26.6924" width="0.4064" layer="1"/>
+<contactref element="R25" pad="1"/>
+<wire x1="31.4912" y1="24.7986" x2="31.5016" y2="25.0882" width="0.4064" layer="1"/>
+<wire x1="31.4912" y1="26.6924" x2="31.5016" y2="26.6924" width="0.4064" layer="1"/>
+<wire x1="31.5016" y1="26.6924" x2="31.5016" y2="25.0882" width="0.4064" layer="1"/>
 </signal>
 </signals>
 </board>
