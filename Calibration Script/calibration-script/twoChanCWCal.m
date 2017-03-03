@@ -103,7 +103,7 @@ offset=1.0e6;
   %fprintf('SOURce
 
 	%% Prime by setting to port #1...
-  sprintf('cw_cal_%i', cal.sn, ':SENS1:CORR:COLL:METH:SOLT1 1');
+  sprintf('cw_cal_%i', cal.sn, 'CONF:RXPORT#1');
   
 	%[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
 	%	prefix :<http://www.sat.com/2011/measure#>\
@@ -114,7 +114,7 @@ offset=1.0e6;
 			
 	for g=amplifierGainDB
   %% Set gain and DC offset tracking...
-  dc_offset = sprintf('cw_cal_%i', cal.sn, ':DIGital:DATA:IOFFset 0');
+  dc_offset = sprintf('cw_cal_%i', cal.sn, 'CONF:GAIN#1');
   %dc_tracking = 
   attenuation = sprintf('cw_cal_%i', cal.sn, 'INP:ATT 0');
   
@@ -157,22 +157,23 @@ offset=1.0e6;
 			
 
 			% Sample Port #1
-      %% what is being sampled? What needs to be documented??
+      sprintf("MEAS:SAMP?");
       
-			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
-				prefix :<http://www.sat.com/2011/measure#>\
-				insert data{\
-					<#%s> :port <#RX1> .\
-				}",instrument)});
+      
+	%		[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
+	%			prefix :<http://www.sat.com/2011/measure#>\
+	%			insert data{\
+	%				<#%s> :port <#RX1> .\
+	%			}",instrument)});
 
             % SPARQl selects R1 port
             % reads from port 1
 
-			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
-				prefix :<http://www.sat.com/2011/measure#>\
-				insert data{\
-					<#%s> :cf \"%f\";:command :acquire,:get_spectrum .\
-				}",instrument,f+offset)});
+%			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
+%				prefix :<http://www.sat.com/2011/measure#>\
+%				insert data{\
+%					<#%s> :cf \"%f\";:command :acquire,:get_spectrum .\
+%				}",instrument,f+offset)});
 
             % f is set in
 				
@@ -188,20 +189,23 @@ offset=1.0e6;
 			_gainCh1=[_gainCh1;_g1];
 			
 			% Sample Port 2
-			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
-				prefix :<http://www.sat.com/2011/measure#>\
-				insert data{\
-					<#%s> :port <#RX2> .\
-				}",instrument)});
+      sprintf('cw_cal_%i', cal.sn, 'CONF:RXPORT#1');
+      sprintf("MEAS:SAMP?");
+      
+%			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
+%				prefix :<http://www.sat.com/2011/measure#>\
+%				insert data{\
+%					<#%s> :port <#RX2> .\
+%				}",instrument)});
 
             % select channel 2
             % what info is being sampled from channel 2?
 
-			[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
-				prefix :<http://www.sat.com/2011/measure#>\
-				insert data{\
-					<#%s> :cf \"%f\";:command :acquire,:get_spectrum .\
-				}",instrument,f+offset)});
+	%		[reply status]=urlread([sataddr '/sparql'],'get',{'query',sprintf("\
+	%			prefix :<http://www.sat.com/2011/measure#>\
+	%			insert data{\
+	%				<#%s> :cf \"%f\";:command :acquire,:get_spectrum .\
+	%			}",instrument,f+offset)});
 
             % adjust the offset
 
